@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>電卓</title>
+  </head>
+  <body>
+    <hr />
+    <form name="calc">
+      <table border="2">
+        <tr>
+          <th colspan="3" align="right"><div id="output">0</div></th>
+          <th><div id="type"></div></th>
+        </tr>
+        <tr>
+          <td><input type="button" value="AC" onClick="all_clear()" /></td>
+          <td><input type="button" value="+/-" onClick="posi_and_nega()" /></td>
+          <td><input type="button" value="%" onClick="one_hundredth()" /></td>
+          <td>
+            <input type="button" value="÷" onClick="input_operater('÷')" />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="７" onClick="input_num(7)" /></td>
+          <td><input type="button" value="８" onClick="input_num(8)" /></td>
+          <td><input type="button" value="９" onClick="input_num(9)" /></td>
+          <td>
+            <input type="button" value="×" onClick="input_operater('×')" />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="４" onClick="input_num(4)" /></td>
+          <td><input type="button" value="５" onClick="input_num(5)" /></td>
+          <td><input type="button" value="６" onClick="input_num(6)" /></td>
+          <td>
+            <input type="button" value="-" onClick="input_operater('-')" />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="１" onClick="input_num(1)" /></td>
+          <td><input type="button" value="２" onClick="input_num(2)" /></td>
+          <td><input type="button" value="３" onClick="input_num(3)" /></td>
+          <td>
+            <input type="button" value="+" onClick="input_operater('+')" />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="０" onClick="input_num()" /></td>
+          <td><input type="button" value="・" onClick="decimal_point()" /></td>
+          <td><input type="button" value="C" onClick="one_clear()" /></td>
+          <td>
+            <input type="button" value="=" onClick="equal('=')" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
