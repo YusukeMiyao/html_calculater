@@ -1,4 +1,3 @@
-// ;<script language="javascript" type="text/javascript">
 let numInFront = "0"
 let operater = ""
 let numInBack = ""
@@ -125,4 +124,3 @@ function equal() {
     }
   }
 }
-// </script>
